@@ -83,7 +83,7 @@ const (
 
 func readCmdLineParams() {
 	hostname, _ := os.Hostname()
-	clusterStr := flag.String(ConfigCluster, "default", "cluster name")
+	clusterStr := flag.String(ConfigCluster, "waf", "cluster name")
 	hostStr := flag.String(ConfigHost, strings.Split(hostname, ".")[0], "host name")
 
 	grpcStr := flag.String(ConfigGRPC, "32767", "gRPC port number")
